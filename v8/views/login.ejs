@@ -1,0 +1,13 @@
+<% include partials/header %>
+<h1><%= message%></h1>
+<h1>Welcome to Login</h1>
+
+
+<form method = "POST", action= "/login">
+    <input placeholder="Username" name="username", type="text">
+    <input placeholder="Password" name="password", type="password">
+    <button>Submit</button>
+</form>
+
+
+<% include partials/footer %>

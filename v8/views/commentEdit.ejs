@@ -1,0 +1,6 @@
+<h1>Please edit your comment here</h1>
+
+<form method= "POST", action="/campground/<%=campg%>/comment/<%=comment._id%>?_method=PUT">
+    <input type="text" name ="text" value="<%=comment.text%>">
+    <button>Submit</button>
+</form>

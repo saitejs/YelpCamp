@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yelpcamp</title>
+        <link rel = "stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel = "stylesheet" href= "/stylesheets/main.css">
+    </head>
+    <body> 
+    
+    
+   <nav class= "navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+           <div class="navbar header">
+               <a class = " navbar brand" href= "/">YelpCamp</a>
+               
+           </div>
+           <div class= "collapse navbar-collapse nav justify-content-end">
+                <ul class="nav justify-content-end">
+                   <% if(!currentUser){ %>
+                    <l1><a href ="/login">Login</a></l1>
+                    <l1><a href ="/register">Signup</a></l1>
+                   <%  }else{ %>
+                    <l1><a href="#">welcome <%= currentUser.username%></a></l1>
+                    <l1><a href ="/logout">Logout</a></l1>
+                    <% } %>
+                </ul>
+           </div>
+           
+       </div>
+       
+   </nav>
